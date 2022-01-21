@@ -1,9 +1,37 @@
 html
 {
-	background: #000000;
+	background: #000;
+	color: #ddd;
 }
 
 body
 {
+	font-family: 'Varela Round';
+}
+
+div#container
+{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
+	width: 960px;
+}
+
+h1
+{
+	font-size: 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2
+{
+	font-size: 22px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+p
+{
+	text-align: left;
 }

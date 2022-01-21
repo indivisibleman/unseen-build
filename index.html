@@ -3,24 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
 	<link rel="stylesheet" href="style.css">
     <title>Unity WebGL Player | Unseen</title>
   </head>
   <body>
-    <canvas id="unity-canvas" width=960 height=540 style="width: 960px; height: 540px; background: #000000"></canvas>
-    <script src="Build/Builds.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Builds.data",
-        frameworkUrl: "Build/Builds.framework.js",
-        codeUrl: "Build/Builds.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Unseen",
-        productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script>
+    <div id="container">
+		<img src="cross-over.png"/>
+		<canvas id="unity-canvas" width=960 height=540 style="width: 960px; height: 540px; background: #000000"></canvas>
+		<script src="Build/Builds.loader.js"></script>
+		<script>
+		  createUnityInstance(document.querySelector("#unity-canvas"), {
+			dataUrl: "Build/Builds.data",
+			frameworkUrl: "Build/Builds.framework.js",
+			codeUrl: "Build/Builds.wasm",
+			streamingAssetsUrl: "StreamingAssets",
+			companyName: "DefaultCompany",
+			productName: "Unseen",
+			productVersion: "0.1",
+			// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+			// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+		  });
+		</script>
+		<img src="cross-over.png"/>
+		<h2>Tips</h2>
+		<p>Cross your eyes until the two horizontal white dots become three. A three dimensional image should then appear in the static. Left clicking on the static will advance to the next image. A right click will toggle the static on/off.</p>
+	</div>
   </body>
 </html>
